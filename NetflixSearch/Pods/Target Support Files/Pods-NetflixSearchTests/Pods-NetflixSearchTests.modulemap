@@ -1,6 +1,0 @@
-framework module Pods_NetflixSearchTests {
-  umbrella header "Pods-NetflixSearchTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

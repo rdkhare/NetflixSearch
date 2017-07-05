@@ -1,6 +1,0 @@
-framework module Pods_NetflixSearch {
-  umbrella header "Pods-NetflixSearch-umbrella.h"
-
-  export *
-  module * { export * }
-}

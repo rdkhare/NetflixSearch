@@ -1,23 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'NetflixSearch' do
+target 'NetflixPicker' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for NetflixSearch
-  
-  pod 'SwiftyJSON'
+  # Pods for NetflixPicker
   pod 'Alamofire', '~> 4.4'
-
-  target 'NetflixSearchTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'NetflixSearchUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'SwiftyJSON'
 
 end

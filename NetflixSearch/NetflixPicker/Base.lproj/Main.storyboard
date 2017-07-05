@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetflixPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Director" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aop-dB-gQk">
+                                <rect key="frame" x="94" y="188" width="179" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Actor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-F3-Jvq">
+                                <rect key="frame" x="94" y="235" width="179" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKt-NQ-KLG">
+                                <rect key="frame" x="57" y="333" width="254" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="Search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mq6-nq-FPU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y7-94-tkv">
+                                <rect key="frame" x="57" y="505" width="302" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7Y7-94-tkv" secondAttribute="bottom" constant="162" id="2v9-KX-2VA"/>
+                            <constraint firstItem="iXL-F3-Jvq" firstAttribute="top" secondItem="Aop-dB-gQk" secondAttribute="bottom" constant="17" id="AwZ-UL-blN"/>
+                            <constraint firstItem="7Y7-94-tkv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="HNg-jm-XJ4"/>
+                            <constraint firstAttribute="trailing" secondItem="7Y7-94-tkv" secondAttribute="trailing" constant="16" id="Hfu-t3-BaQ"/>
+                            <constraint firstItem="LKt-NQ-KLG" firstAttribute="top" secondItem="iXL-F3-Jvq" secondAttribute="bottom" constant="68" id="Lqn-j8-7Pd"/>
+                            <constraint firstItem="LKt-NQ-KLG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="PHw-at-qqh"/>
+                            <constraint firstItem="iXL-F3-Jvq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="94" id="UQ3-hE-wQD"/>
+                            <constraint firstItem="iXL-F3-Jvq" firstAttribute="top" secondItem="Aop-dB-gQk" secondAttribute="bottom" constant="17" id="Viq-dY-pDB"/>
+                            <constraint firstItem="Aop-dB-gQk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="94" id="Xu4-7t-rOd"/>
+                            <constraint firstItem="LKt-NQ-KLG" firstAttribute="top" secondItem="iXL-F3-Jvq" secondAttribute="bottom" constant="68" id="cgL-sM-WXA"/>
+                            <constraint firstItem="Aop-dB-gQk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="k1y-76-nH3"/>
+                            <constraint firstAttribute="trailing" secondItem="iXL-F3-Jvq" secondAttribute="trailing" constant="102" id="vaP-V6-YPd"/>
+                            <constraint firstAttribute="trailing" secondItem="LKt-NQ-KLG" secondAttribute="trailing" constant="64" id="wm7-zH-Jti"/>
+                            <constraint firstAttribute="trailing" secondItem="Aop-dB-gQk" secondAttribute="trailing" constant="102" id="xbe-3z-6cI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ActorField" destination="iXL-F3-Jvq" id="DcU-tG-R1Q"/>
+                        <outlet property="DirectorField" destination="Aop-dB-gQk" id="D0j-9k-1Dc"/>
+                        <outlet property="movieName" destination="7Y7-94-tkv" id="FVV-dr-LAJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
