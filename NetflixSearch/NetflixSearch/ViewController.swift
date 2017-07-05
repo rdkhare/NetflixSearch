@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var DirectorField: UITextField!
     @IBOutlet weak var ActorField: UITextField!
+    @IBOutlet weak var movieName: UILabel!
     
     @IBAction func Search(_ sender: Any) {
         let apiToContact = "http://netflixroulette.net/api/api.php"
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
         
         
         
-        let test = Alamofire.request(apiToContact, parameters: parameters).validate().responseJSON() { response in
+    Alamofire.request(apiToContact, parameters: parameters).validate().responseJSON() { response in
             switch response.result {
             case .success:
                 if let value = response.result.value {
@@ -43,13 +44,16 @@ class ViewController: UIViewController {
                     
                     print(json)
                     
-                    
+                    let randomInt = arc4random_uniform(UInt32(json.count))
+                    self.movieName.text = json[Int(randomInt)]["show_title"].stringValue
                 }
             case .failure(let error):
                 print(error)
             }
         }
-        print(test);
+       
+        
+        
         
     }
 
